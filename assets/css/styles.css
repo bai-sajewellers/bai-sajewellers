@@ -340,7 +340,7 @@ header nav .logo{
     header nav{
         position: relative;
         top: 1rem;
-        width: 110%;
+        width: 100%;
         padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
@@ -364,6 +364,10 @@ header nav .logo{
     .menu ul{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .nav-link{
+        margin-top: 1rem;
     }
 
     .products-link{
