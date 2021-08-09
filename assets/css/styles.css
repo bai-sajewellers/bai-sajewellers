@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+header nav .logo{
+    width: 30%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.menu{
+    width: 40%;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2{
+    font-family: 'Gabriela', serif;
+}
+
+.toggle-menu{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 4rem;
+    height: 3rem;
+}
+
+.bars{
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 15px;
+}
+
+.menu ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    transition: color 0.1s linear 0s;
+}
+
+.products-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.1s linear 0s;
+}
+
+.nav-link:hover, .products-link:hover{
+    color: darkgray;
+}
+
+.products-link:hover{
+    text-shadow: 5px 5px 8px black;
+}
+
+.cta{
+    width: 12rem;
+    height: 4rem;
+    padding: auto;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+}
+
+.cta:hover{
+    background-color: orange;
+}
+
+.clipped{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: circle(80vh at 100% 50%);
+    z-index: 0;
+}
+
+.bride{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.main{
+    position: absolute;
+    top: 35%;
+    left: 2rem;
+    width: 80%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.wrapper h1{
+    font-size: 7rem;
+}
+
+.wrapper .slidingVertical{
+	display: inline;
+}
+
+.wrapper .slidingVertical span{
+	animation: topToBottom 10s linear infinite 0s;
+	-ms-animation: topToBottom 10s linear infinite 0s;
+	-webkit-animation: topToBottom 10s linear infinite 0s;
+	color: fuchsia;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+
+/*topToBottom Animation*/
+@keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.main p{
+    font-size: 3rem;
+    font-weight: 600;
+    color: darkslategrey;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+}
+
+.heading{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading p{
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.grid{
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.grid-item{
+    width: 225px;
+    height: 225px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    transition: all 0.3s linear 0s;
+}
+
+.grid-item:hover{
+    box-shadow: 5px 5px 10px rgb(185, 185, 185), -5px -5px 10px rgb(185, 185, 185);
+}
+
+.bis{
+    max-width: 60%;
+    height: auto;
+}
+
+.gst{
+    width: 20%;
+    height: auto;
+}
+
+.delivery{
+    max-width: 25%;
+    height: auto;
+}
+
+.king{
+    max-width: 30%;
+    height: auto;
+}
+
+.grid-item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 80%;
+}
+
+.grid-item a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 770px) {
+    
+    header nav{
+        position: relative;
+        top: 1rem;
+        width: 110%;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .logo .nav-link h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .toggle-menu{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products-link{
+        margin: 1.5rem 0;
+    }
+
+    .links{
+        color: darkslategray;
+        font-weight: bolder;
+    }
+
+    .links.active{
+        display: flex;
+    }
+
+    .clipped{
+        position: absolute;
+        top: 60%;
+        padding: 0 auto;
+        width: 100%;
+        height: 40vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .bride{
+        width: 300px;
+        height: 300px;
+        position: unset;
+        border-radius: 50%;
+    }
+
+    .main{
+        position: absolute;
+        top: 8vh;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main .wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .main p{
+        font-size: 2rem;
+    }
+
+    .grid-item{
+        margin-bottom: 2rem;
+    }
+
+    .container{
+        margin-top: 15rem;
+    }
+}
+
