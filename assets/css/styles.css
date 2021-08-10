@@ -126,7 +126,7 @@ header nav .logo{
 }
 
 .cta{
-    box-sizing: content-box;
+    width: auto;
     height: 4rem;
     padding: 0 1rem;
     background-color: rgb(0, 160, 0);
