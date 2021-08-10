@@ -46,8 +46,22 @@ header nav{
 
 header nav .logo{
     width: 30%;
-    font-size: 2rem;
-    font-weight: 400;
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.logo img{
+    max-width: 80%;
+}
+
+.logo h2{
+    font-family: 'Gabriela', serif;
+    font-size: 3rem;
+    text-align: left;
+    height: 100%;
+    padding: 1rem 0;
+    display: grid;
 }
 
 .menu{
@@ -57,10 +71,6 @@ header nav .logo{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo h2{
-    font-family: 'Gabriela', serif;
 }
 
 .toggle-menu{
@@ -116,10 +126,10 @@ header nav .logo{
 }
 
 .cta{
-    width: 12rem;
+    box-sizing: content-box;
     height: 4rem;
-    padding: auto;
-    background-color: orangered;
+    padding: 0 1rem;
+    background-color: rgb(0, 160, 0);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -336,6 +346,42 @@ header nav .logo{
     font-weight: 600;
 }
 
+.lottie-item{
+    background: #fff;
+    width: 275px;
+    height: 275px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear 0s;
+}
+
+.lottie-item:hover{
+    box-shadow: 5px 5px 10px rgb(110, 150, 255), -5px -5px 10px rgb(110, 150, 255);
+}
+
+.lottie-item h2{
+    max-width: 80%;
+    text-align: center;
+}
+
+
+.contact{
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+    width: 6rem;
+    height: 6rem;
+    background: url("/bai-sajewellers/assets/img/call.png") center / cover no-repeat;
+}
+.contact a{
+    width: 6rem;
+    height: 6rem;
+}
+
 @media (max-width: 770px) {
     
     header nav{
@@ -349,9 +395,13 @@ header nav .logo{
         justify-content: space-between;
     }
 
-    .logo .nav-link h2{
-        font-size: 2rem;
-        margin-top: 1rem;
+    header nav .logo{
+        width: 70%;
+    }
+
+    .logo h2{
+        font-size: 1.75rem;
+        padding: 0;
     }
     
     .toggle-menu{
@@ -373,6 +423,9 @@ header nav .logo{
 
     .products-link{
         margin: 1.5rem 0;
+    }
+    .products-link:hover{
+        text-shadow: none;
     }
 
     .links{
@@ -433,6 +486,14 @@ header nav .logo{
 
     .container{
         margin-top: 15rem;
+    }
+
+    .lottie-item, .lottie-item > *{
+        transform: scale(0.9);
+    }
+
+    .contact{
+        left: 80vw;
     }
 }
 
