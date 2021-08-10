@@ -375,7 +375,7 @@ header nav .logo{
     left: 90vw;
     width: 6rem;
     height: 6rem;
-    background: url("/bai-sajewellers/assets/img/call.png") center / cover no-repeat;
+    background: url("assets/img/call.png") center / cover no-repeat;
 }
 .contact a{
     width: 6rem;
