@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Bai-sa Jewellers</title>
+    <title>Jewelleries</title>
 
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header style="margin-bottom: 0 !important;">
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="assets/img/logo.png"></a><a href="#" class="nav-link"><h2>Bai-sa Jewellers</h1></a>
+                <a href="index.html"><img src="assets/img/logo.png"></a><a href="index.html" class="nav-link"><h2>Bai-sa Jewellers</h1></a>
             </div>
             <a href="">
                 <div class="toggle-menu">
@@ -34,10 +36,23 @@
     </header>
 
 
-    <section class="story">
-        <div class="container">
-            <h1>This Page Is Under Development</h1>
-        </div>
+    <section>
+            <div class="swiper-container">
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="assets/img/1.jpg"></div>
+                        <div class="swiper-slide"><img src="assets/img/2.jpg"></div>
+                        <div class="swiper-slide"><img src="assets/img/3.jpg"></div>
+                        ...
+                    </div>
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <div class="swiper-scrollbar"></div>
+                    <div style="position: absolute; bottom: 0; width: 100%; height: 30%; padding-top: 2rem; background: linear-gradient(180deg, rgba(0,0,0,0), #000); text-align: center; font-size: 3rem; color: #fff; z-index: 5;"><h1>Top Trends</h1></div>
+        </div>  
     </section>
 
 
@@ -81,5 +96,54 @@
     <!--Footer Ends Here-->
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2aa643340e.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+                speed:1000,
+            direction: 'horizontal',
+            navigation: 
+            {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            pagination: 
+            {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            zoom: true,
+            keyboard: 
+            {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            mousewheel: 
+            {
+                invert: true,
+            },
+            autoplay: 
+            {
+            delay: 2000,
+            },
+            // Optional Parameters End Here
+
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 </html>
