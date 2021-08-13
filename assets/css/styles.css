@@ -299,6 +299,7 @@ section{
 /*Gallery Overlay Text Effect*/
 .gallery-overlay span{
     position: relative;
+    line-height: 1rem;
 }
 
 .gallery-overlay span::before,
