@@ -8,11 +8,13 @@
 
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section class="stories story1">
-        <div class="story-box box1">
-            <h1>Back in time...</h1>
+        <div class="story-box box1" data-aos="zoom-out-right">
+            <h1>Hundreds of years ago...</h1>
             <br>
             <br>
             <br>
@@ -23,17 +25,44 @@
             </p>
         </div>
     </section>
-    <section class="stories story2">
-        <div class="story-box box2">
+    <section class="stories story2">        
+        <div class="rulers">
+            <img src="assets/img/ruler1.jpg" class="ruler1">
+            <img src="assets/img/ruler2.jpg" class="ruler2">
+            <img src="assets/img/queen1.jpg" class="queen1">
+            <img src="assets/img/queen2.jpg" class="queen2">
+        </div>
+        <div class="story-box box2" data-aos="slide-left">
             <p>The way these elites used to dress and adorn was a matter of their self-esteem. Keeping this in mind, the goldsmiths used the finest quality of gold & gems and handcrafted a masterpeice that reflected the bearer's personality.</p>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <h1>This page is under development</h1>
+    <section class="stories story3">
+        <div class="story-box box3" data-aos="zoom-out-left">
+            <h1>...even today</h1>
             <br>
-            <a href="index.html">Click Here To Go Back To Homepage</a>
+            <br>
+            <br>
+            <p>We continue to follow our legacy of handcrafting those masterpieces. With generations of experience we know how to choose fine quality of gold, brilliant gems and create beautiful designs that will last for generations.
+                <br>
+                <br>
+               Come and be a part of this unbreakable legacy. Get your <strong>Jadau Kundan Meena jewellery </strong>created by us.
+            </p>
+        </div>
+        <div class="about-menu">
+            <a href="index.html"><div class="cta home"><i class="fas fa-home"></i><h1>HOME</h1></div></a>
+            <a href="tel:+919606264488"><div class="cta call"><i class="fas fa-phone-alt"></i><h1>CONTACT US</h1></div></a>
         </div>
     </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            offset: 100
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/2aa643340e.js" crossorigin="anonymous"></script>
 </body>
 </html>

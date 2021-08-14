@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +9,15 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
-    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     min-height: 100vh;
     padding: 0;
     background-color: aliceblue;
+    overflow-x: hidden;
 }
 
 section{
@@ -35,7 +39,7 @@ section{
     position: absolute;
     padding: 2rem;
     margin: 1rem;
-    max-width: 60%;
+    max-width: 40%;
     color: #fff;
     
 }
@@ -50,6 +54,8 @@ section{
     line-height: 1.5em;
 }
 .box1{
+    top: 25%;
+    left: 0;
     backdrop-filter: blur(2px);
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.75);
@@ -60,7 +66,8 @@ section{
     right: 0;
     margin-top: 2rem !important;
     max-width: 45% !important;
-    background: rgb(190, 100, 0);
+    background: navy;
+    box-shadow: -5px 5px 10px #000;
 }
 .box2 p{
     padding: 1.5rem;
@@ -68,28 +75,130 @@ section{
     font-size: 1.75rem !important;letter-spacing: .075em;
 }
 
+.box3{
+    top: 25% !important;
+    right: 0 !important;
+    background-color: rgba(50, 50, 200, 0.6);
+    backdrop-filter: blur(3px);
+}
+
 /*Background Images*/
 .story1{
     background: url(/assets/img/story1.jpg) 80% 50% / cover no-repeat;
 }
 .story2{
-    background: url(/assets/img/story2.jpg) 80% 50% / cover no-repeat;
+    background: linear-gradient(120deg, skyblue, blue);
+}
+.story3{
+    background: url(/assets/img/story3.jpg) top / cover no-repeat;
 }
 
-.container h1{
-    text-align: center;
+
+.rulers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.rulers img{
+    margin: 0 1rem;
+}
+.queen1, .queen2{
+    width: 300px;
+    height: 325px;
+    object-fit: cover;
+    object-position: top;
+}
+.queen2{
+    width: 350px !important;
+    height: 275px !important;
 }
 
-a{
+
+.about-menu{
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    margin: 2rem auto;
+    width: 500px;
+    height: 75px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.about-menu a{
     text-decoration: none;
-    color: darkblue;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.cta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.75rem;
+    transition: all .3s linear 0s;
+}
+.home{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.call{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.cta:hover{
+    background: radial-gradient(rgb(0, 0, 175), rgb(0, 0, 150));
+    color: #fff;
+    cursor: pointer;
+}
+.cta i{
+    font-size: 3rem;
+    margin-right: 1.5rem;
 }
 
 @media (max-width: 770px) {
+    .box1, .box3{
+        top: 15% !important;
+        max-width: 75% !important;
+    }
     .box2{
-        max-width: 55% !important;
+        top: 0;
+        max-width: 100% !important;
+        padding: 5px;
+    }
+    .box2 p{
+        padding: 5px;
+    }
+    .ruler1{
+        width: 150px;
+        height: 175px;
+    }
+    .ruler2{
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 2rem !important;
+    }
+    .queen2, .queen1{
+        width: 200px !important;
+        height: 175px !important;
+        margin: 5px !important;
+    }
+
+    .about-menu{
+        left: 0%;
+        transform: scale(0.75);
     }
 }
