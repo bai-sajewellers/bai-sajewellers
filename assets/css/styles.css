@@ -428,8 +428,8 @@ section{
     }
 
     .gallery{
-        transform: scale(0.9);
-        padding: 4rem 2rem;
+        transform: scale(0.95);
+        padding: 4rem 1rem;
     }
 
     .contact{
