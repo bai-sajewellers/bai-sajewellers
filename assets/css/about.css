@@ -121,7 +121,7 @@ section{
     left: 35%;
     bottom: 0;
     margin: 2rem auto;
-    width: 500px;
+    width: 450px;
     height: 75px;
     background: #fff;
     border-radius: 50px;
@@ -168,7 +168,11 @@ section{
 }
 
 @media (max-width: 770px) {
-    .box1, .box3{
+    .box1{
+        top: .5% !important;
+        max-width: 75% !important;
+    }
+    .box3{
         top: 15% !important;
         max-width: 75% !important;
     }
@@ -198,7 +202,10 @@ section{
     }
 
     .about-menu{
-        left: 0%;
+        position: absolute;
+        left: -10%;
+        bottom: 0;
+        
         transform: scale(0.75);
     }
 }
