@@ -37,7 +37,7 @@
     </header>
 
 
-    <section class="main">
+    <div class="main">
             <div class="swiper-container">
 
                     <div class="swiper-wrapper">
@@ -52,9 +52,112 @@
                     <div class="swiper-button-next"></div>
                 
                     <div class="swiper-scrollbar"></div>
-                    <div style="position: absolute; bottom: 0; width: 100%; height: 30%; padding-top: 2rem; background: linear-gradient(180deg, rgba(0,0,0,0), #000); text-align: center; font-size: 3rem; color: #fff; z-index: 5;"><h1>Top Trends</h1></div>
+                    <div class="swiper-heading"><h1>Top Trends</h1></div>
         </div>  
+    </div>
+
+    <section class="products">
+        <div class="container">
+
+            <!-- Copy this snippet after every 2 products -->
+
+            <div class="responsive-productcard-div" data-aos="float-up">
+
+                    <!-- This is the Product Card -->
+                    <div class="product-card">
+                        <a href="#" class="img-anchor">
+                            <img src="/assets/img/7.jpg" class="product-img" />
+                            <div class="product-overlay">
+                                <button class="viewbtn">more info</button>
+                            </div>
+                        </a>
+                        <p class="label enquiry">Contact for enquiry</p>
+                        <br>
+                        <h3 class="product-name">Kundan Jadau Jewellery</h3>
+                        <div class="contact-options">
+                            <a href="https://wa.me/919606264488" target="_blank"><i class="fab fa-whatsapp"></i><h3>Chat Now</h3></a>
+                            <a href="tel:+919606264488"><i class="fas fa-phone-alt"></i><h3>Call Us</h3></a>
+                        </div>
+                    </div>
+                    <!-- Product Card ends here -->
+
+                    <div class="product-card">
+                        <a href="#" class="img-anchor">
+                            <img src="/assets/img/7.jpg" class="product-img" />
+                            <div class="product-overlay">
+                                <button class="viewbtn">more info</button>
+                            </div>
+                        </a>
+                        <p class="label enquiry">Contact for enquiry</p>
+                        <br>
+                        <h3 class="product-name">Kundan Jadau Jewellery</h3>
+                        <div class="contact-options">
+                            <a href="https://wa.me/919606264488" target="_blank"><i class="fab fa-whatsapp"></i><h3>Chat Now</h3></a>
+                            <a href="tel:+919606264488"><i class="fas fa-phone-alt"></i><h3>Call Us</h3></a>
+                        </div>
+                    </div>
+            </div>
+            <!-- Copy snippet till here after every 2 products -->
+
+            <div class="responsive-productcard-div" data-aos="float-up">
+                
+                <!-- This is the Product Card -->
+                <div class="product-card">
+                    <a href="#" class="img-anchor">
+                        <img src="/assets/img/7.jpg" class="product-img" />
+                        <div class="product-overlay">
+                            <button class="viewbtn">more info</button>
+                        </div>
+                    </a>
+                    <p class="label enquiry">Contact for enquiry</p>
+                    <br>
+                    <h3 class="product-name">Kundan Jadau Jewellery</h3>
+                    <div class="contact-options">
+                        <a href="https://wa.me/919606264488" target="_blank"><i class="fab fa-whatsapp"></i><h3>Chat Now</h3></a>
+                        <a href="tel:+919606264488"><i class="fas fa-phone-alt"></i><h3>Call Us</h3></a>
+                    </div>
+                </div>
+                <!-- Product Card ends here -->
+
+                <div class="product-card">
+                    <a href="#" class="img-anchor">
+                        <img src="/assets/img/7.jpg" class="product-img" />
+                        <div class="product-overlay">
+                            <button class="viewbtn">more info</button>
+                        </div>
+                    </a>
+                    <p class="label enquiry">Contact for enquiry</p>
+                    <br>
+                    <h3 class="product-name">Kundan Jadau Jewellery</h3>
+                    <div class="contact-options">
+                        <a href="https://wa.me/919606264488" target="_blank"><i class="fab fa-whatsapp"></i><h3>Chat Now</h3></a>
+                        <a href="tel:+919606264488"><i class="fas fa-phone-alt"></i><h3>Call Us</h3></a>
+                    </div>
+                </div>
+        </div>
+
+        </div>
     </section>
+
+
+    <!-- This is the dynamic product-view area. Don't modify this code -->
+        <section class="blurbg">
+            <div class="dynamic-card">
+                <div class="img-area"></div>
+                <div class="content">
+                    <h1 class="name">Lorem Ipsum</h1>
+                    <p class="label enquiry">Contact for enquiry</p>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam modi quae enim tenetur maxime, similique suscipit facilis aliquam quisquam praesentium libero non ex voluptatum fugit.</p>
+                    <p class="label"><strong>Contact Oprions :</strong></p>
+                    <div class="contact-options dynamic">
+                        <a href="https://wa.me/919606264488" target="_blank"><i class="fab fa-whatsapp"></i><h3>Chat Now</h3></a>
+                        <a href="tel:+919606264488"><i class="fas fa-phone-alt"></i><h3>Call Us</h3></a>
+                    </div>
+                </div>
+                <div class="close"><i class="far fa-times-circle"></i></div>
+            </div>
+        </section>
+    <!-- Dynamic product-view code ends here. Don't modify this code -->
 
 
     <!--Footer Starts Here-->
@@ -100,6 +203,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2aa643340e.js" crossorigin="anonymous"></script>
     <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/dynamic-product.js"></script>
+
     <script>
         const swiper = new Swiper('.swiper-container', {
             // Optional parameters
@@ -146,5 +251,15 @@
             },
         });
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 150
+        });
+    </script>
+
+    <!--Don't Change This Code-->
 </body>
 </html>
