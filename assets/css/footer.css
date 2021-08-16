@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -13,8 +13,9 @@ footer{
     width: 100%;
     height: auto;
     padding: 1rem 2rem;
-    background-color: rgb(0, 0, 40);
+    background-color: rgb(0,0,0);
     color: #fff;
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer-grid{
